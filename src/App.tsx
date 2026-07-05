@@ -1273,6 +1273,11 @@ export default function App() {
               </div>
             </div>
           </div>
+        ) : !lobby ? (
+          <div className="flex flex-col items-center justify-center py-20 space-y-4">
+            <RefreshCw className="w-8 h-8 text-emerald-500 animate-spin" />
+            <p className="text-sm text-slate-400 font-bold">Connecting to poker table...</p>
+          </div>
         ) : (
           
           // VIEW C: ACTIVE POKER TABLE ROOM
